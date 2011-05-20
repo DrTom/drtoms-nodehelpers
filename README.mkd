@@ -1,0 +1,24 @@
+DrTom's Node-helpers
+====================
+
+This package exists merely in order to keep my other projects DRY.
+I don't recommend to use it directly. I might change the API to be
+incompatible from version to version as I see fit.
+
+Usage
+------
+
+See the files in the `./demo` (respectively `./src/demo`) directory and in particular 
+the tests in `./test` (or `./src/test` respectively). 
+
+Development
+-----------
+
+The source is tiny, straight forward, written in
+[CoffeeScript](http://jashkenas.github.com/coffee-script/) and
+located in the `src` directory.
+
+Tests require the [nodeunit](https://github.com/caolan/nodeunit) framework.
+
+None of the build or development dependencies is defined in the npm
+package. 

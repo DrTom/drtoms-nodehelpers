@@ -1,0 +1,25 @@
+{ "author" : 
+  { "email" : "DrTom@schank.ch"
+  , "name" : "Thomas Schank"
+  , "url" : "dr.th.schank.ch"
+  } 
+, "dependencies" : 
+  { "underscore" : "*"
+  } 
+, "description" : "A library full of helpers."
+, "directories" : 
+  { "lib" : "./lib"
+  } 
+, "engines" : 
+  [ "node >=0.4.0"
+  ] 
+, "main" : "./lib/drtoms-nodehelpers"
+, "name" : "drtoms-nodehelpers"
+, "tags" : 
+  [ "helpers"
+  , "stringbuilder"
+  , "asyncworkflow"
+  , "logging"
+  ] 
+, "version" : "0.0.9-beta"
+} 

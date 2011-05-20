@@ -1,0 +1,27 @@
+var logger, logging, myLogger, util;
+logging = (require('drtoms-nodehelpers')).logging;
+util = require('util');
+console.log(util.inspect(logging));
+logger = logging.logger();
+logger.log('DEBUG', 'gibberish ....');
+logger.log('INFO', 'tell you something: ...');
+logger.log('WARN', 'I warn you!');
+logger.log('ERROR', 'bad bad');
+logger.log('FATAL', 'bye bye');
+logging.defaultAppenders().forEach(function(appender) {
+  return appender.level('ALL');
+});
+logger.log('DEBUG', 'gibberish ....');
+logger.log('INFO', 'tell you something: ...');
+logger.log('WARN', 'I warn you!');
+logger.log('ERROR', 'bad bad');
+logger.log('FATAL', 'bye bye');
+myLogger = logging.logger('myLogger');
+myLogger.log("WARN", "a message");
+myLogger.info("a info");
+myLogger.warn("other message");
+logger.log('DEBUG', 'gibberish ....');
+logger.log('INFO', 'tell you something: ...');
+logger.log('WARN', 'I warn you!');
+logger.log('ERROR', 'bad bad');
+logger.log('FATAL', 'bye bye');
