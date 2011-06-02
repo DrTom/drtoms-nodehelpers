@@ -14,7 +14,7 @@ print = ->
     else if typeof arg is "null"
       process.stdout.write " null"
     else
-      util.inspect arg
+      process.stdout.write util.inspect arg
 
 
 println = ->
